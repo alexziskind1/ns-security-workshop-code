@@ -1,0 +1,11 @@
+<ActionBar>
+    <ActionItem text="Logout" ios.position="right" (tap)="logout()"></ActionItem>
+</ActionBar>
+
+<GridLayout class="page">
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [text]="item.title" class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</GridLayout>
